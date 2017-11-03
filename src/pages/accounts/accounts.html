@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color={{myBrandData.PrimaryColor}}>
+  <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -9,10 +9,10 @@
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let account of accounts" (click)="getDetail(account)">
-      <ion-icon name="md-person" item-start>
-        <h2 item-content>{{account.accountname}}</h2>
-        <h3 item-content>{{account.accountcompany}}</h3>
-      </ion-icon>
+      <ion-icon name="md-person" item-start></ion-icon>
+
+      <h2>{{account.accountname}}</h2>
+      <h3>{{account.accountcompany}}</h3>
     </ion-item>
   </ion-list>
   <ion-fab top right edge>
