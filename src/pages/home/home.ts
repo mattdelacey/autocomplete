@@ -42,8 +42,8 @@ export class HomePage {
           console.log(this.myBrandData.menuStyle.menuStyles);
         
         
-        this.events.publish('menu:change', this.myBrandData.menuStyle.menuStyles);
-        this.events.publish('tabs:change', this.myBrandData.tabStyles.tabStyles);
+        //this.events.publish('menu:change', this.myBrandData.menuStyle.menuStyles);
+        //this.events.publish('tabs:change', this.myBrandData.tabStyles.tabStyles);
       } catch(err) {
         console.log(err);
       }

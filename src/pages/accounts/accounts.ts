@@ -92,6 +92,24 @@ export class AccountsPage {
                 });
 
                 toast.present();
+
+                var dataStore = Kinvey.DataStore.collection('accounts', Kinvey.DataStoreType.Sync) as Kinvey.SyncStore;
+
+                // persist locally
+                //
+                const promise = dataStore.save(m).then((entity: {}) => {
+                  this.ref.detectChanges();
+
+                  for (var i=0; i < this.accounts.length; i++) {
+                    if ( this.accounts[i]._id == (entity as any)._id ) {
+                      this.accounts[i].accountname = entity.accountname;
+                      ref.detectChanges();
+                    }
+                  }
+
+                }).catch((error: Kinvey.BaseError) => {
+                  console.log(error);
+                });
               },
               onStatus: (s) => {
                 // handle status events, which pertain to this collection
