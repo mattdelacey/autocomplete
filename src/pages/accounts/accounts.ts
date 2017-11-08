@@ -102,7 +102,7 @@ export class AccountsPage {
 
                   for (var i=0; i < this.accounts.length; i++) {
                     if ( this.accounts[i]._id == (entity as any)._id ) {
-                      this.accounts[i].accountname = entity.accountname;
+                      this.accounts[i].accountname = (entity as any).accountname;
                       ref.detectChanges();
                     }
                   }
