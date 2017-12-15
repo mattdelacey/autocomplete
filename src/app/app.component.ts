@@ -1,21 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { Events, Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { TabsPage } from '../pages/tabs/tabs';
-
-import { RefPage } from '../pages/ref/ref';
-//import { RefDetailPage } from '../pages/refdetail/refdetail';
-import { AccountsPage } from '../pages/accounts/accounts';
-import { OfflinePage } from '../pages/offline/offline';
-//import { AccountDetailPage } from '../pages/accountdetail/accountdetail';
 import { LoginPage } from '../pages/login/login';
-import { TasksPage } from '../pages/tasks/tasks';
-import { MapPage } from '../pages/map/map';
-import { ChatPage } from '../pages/chat/chat';
-import { AllTasksPage } from '../pages/alltasks/alltasks';
-//import { BrandData } from '../../providers/brand-data';
-
+import { Http, Headers, RequestOptions } from '@angular/http';
 
 
 @Component({
@@ -36,14 +24,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
     { title: 'Login', component: LoginPage, icon: 'md-lock' },
-      { title: 'Home', component: TabsPage, icon: 'md-home' },
-      { title: 'Reference', component: RefPage, icon: 'md-book' },
-      { title: 'Accounts', component: AccountsPage, icon: 'md-people' },
-      { title: 'Add Task', component: TasksPage, icon: 'md-briefcase' },
-      { title: 'Tasks', component: AllTasksPage, icon: 'md-attach' },
-      { title: 'Offline', component: OfflinePage, icon: 'md-wifi' },
-      { title: 'Geo', component: MapPage, icon: 'md-map' },
-      { title: 'Chat', component: ChatPage, icon: 'md-chatboxes' }
+      { title: 'Home', component: TabsPage, icon: 'md-home' }
      
       
     ];

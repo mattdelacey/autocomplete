@@ -11,9 +11,6 @@ export class BrandData {
  
   ) {}
 
-  /*hasFavorite(sessionName: string): boolean {
-    return (this._favorites.indexOf(sessionName) > -1);
-  };*/
 
   setBrand(newbrand): void {
     this.mybrand = newbrand;

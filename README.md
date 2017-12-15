@@ -1,15 +1,15 @@
-# Standard Demo Environment - Ionic 2
+# Autocomplete with ElasticSearch
 
 ## What is here?
 
-08/29/2017 - At this time, this should have feature parity with the original Ionic 1 version of the Standard Demo Environment with two exceptions:
+Simple Angular Application that can be deployed and run on both web and mobile (iOS and Android)
 
-- Image capture on the tasks is currently not working.
+- Users can go to the search tab, start typing, and Product names will appear with low latency
 - Customization of all menu items in terms of name and icon is all possible, but the tabs require more manual intervention right now.
 
 To run, clone this repo and then run: npm install
 
-Then, you should be able to either run ionic serve or ionic corodova build ios and install on a device.
+Then, you should be able to either run ionic serve or ionic corodova build ios or ionic cordova build android and install on a device.
 
-ionic cordova build ios
+
 
