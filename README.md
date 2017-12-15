@@ -5,7 +5,7 @@
 Simple Angular Application that can be deployed and run on both web and mobile (iOS and Android)
 
 - Users can go to the search tab, start typing, and Product names will appear with low latency
-- Customization of all menu items in terms of name and icon is all possible, but the tabs require more manual intervention right now.
+- Search uses the _suggest endpoint for elasticsearch running on Google Cloud Platform
 
 To run, clone this repo and then run: npm install
 
